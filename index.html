@@ -6,10 +6,12 @@
     <title>Vrushal Gogari - Cyber Security Analyst</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
     <header>
-        Vrushal Gogari - Cyber Security Analyst
+        <h1 class="animate">Vrushal Gogari</h1>
+        <p class="animate">Cyber Security Analyst | Ethical Hacker</p>
     </header>
     <nav>
         <a href="#about">About</a>
@@ -19,36 +21,48 @@
         <a href="#contact">Contact</a>
     </nav>
     
-    <section id="about">
-        <h2 class="hero">Welcome to My Cyber Security Portfolio</h2>
-        <p>Passionate about protecting data and securing networks against cyber threats.</p>
+    <section id="about" class="hero-section">
+        <h2>Welcome to My Cyber Security Portfolio</h2>
+        <p>Defending digital assets, securing networks, and stopping cyber threats before they strike.</p>
     </section>
     
     <section id="skills" class="skills">
         <h2>Technical Skills</h2>
-        <p>Python, PHP, HTML, CSS, JavaScript, MySQL, MongoDB, Network Security, Penetration Testing</p>
+        <div class="skill-bar">
+            <div class="skill" style="width: 90%">Python & Cybersecurity - 90%</div>
+        </div>
+        <div class="skill-bar">
+            <div class="skill" style="width: 85%">Penetration Testing - 85%</div>
+        </div>
+        <div class="skill-bar">
+            <div class="skill" style="width: 80%">Network Security - 80%</div>
+        </div>
     </section>
     
     <section id="experience" class="experience">
         <h2>Experience</h2>
-        <p>Cyber Security Analyst at Vosyn Inc. (Jan 2025 - Present)</p>
-        <p>Security Analyst at The Cronos Group (Jan 2024 - Dec 2024)</p>
+        <p><strong>Cyber Security Analyst</strong> - Vosyn Inc. (Jan 2025 - Present)</p>
+        <p><strong>Security Analyst</strong> - The Cronos Group (Jan 2024 - Dec 2024)</p>
     </section>
     
     <section id="projects" class="projects">
         <h2>Projects</h2>
-        <p>Wake-Up Robot - Automated Line Following Alarm</p>
-        <p>Vulnerability Assessment Project</p>
+        <div class="project-card">Wake-Up Robot - Automated Line Following Alarm</div>
+        <div class="project-card">Vulnerability Assessment Project</div>
     </section>
     
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:vrushalgogari97@gmail.com" class="btn">Send an Email</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/vrushalg" target="_blank" class="btn">View Profile</a></p>
+        <a href="mailto:vrushalgogari97@gmail.com" class="btn">Send an Email</a>
+        <a href="https://www.linkedin.com/in/vrushalg" target="_blank" class="btn">LinkedIn Profile</a>
     </section>
     
     <footer>
         <p>&copy; 2025 Vrushal Gogari | Cyber Security Analyst</p>
     </footer>
+    
+    <script>
+        gsap.from(".animate", {opacity: 0, y: 50, duration: 1, stagger: 0.3});
+    </script>
 </body>
 </html>
