@@ -1,97 +1,215 @@
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vrushal Gogari - Cyber Security Analyst</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            text-align: center;
         }
         header {
-            background-color: #333;
+            padding: 50px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            backdrop-filter: blur(10px);
+        }
+        nav a {
             color: white;
-            text-align: center;
-            padding: 1rem 0;
+            text-decoration: none;
+            padding: 0 20px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #00a8cc;
         }
         section {
-            width: 80%;
+            padding: 60px 20px;
+            max-width: 900px;
             margin: auto;
-            padding: 20px;
-            background: white;
+        }
+        .hero {
+            font-size: 32px;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+        .skills, .experience, .projects {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .btn {
+            display: inline-block;
+            background: #00a8cc;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
             margin-top: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
         }
-        h2 {
-            color: #333;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li {
-            background: #eee;
-            margin: 5px 0;
-            padding: 10px;
-            border-left: 5px solid #333;
+        .btn:hover {
+            background: #005f73;
         }
         footer {
-            text-align: center;
+            margin-top: 50px;
             padding: 20px;
-            background: #333;
-            color: white;
-            margin-top: 20px;
+            background: #0f3460;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Vrushal Gogari</h1>
-        <p>Cyber Security Analyst | IT Professional</p>
+        Vrushal Gogari - Cyber Security Analyst
     </header>
-
-    <section>
-        <h2>About Me</h2>
-        <p>Highly motivated and detail-oriented Cyber Security Analyst with expertise in vulnerability assessments, penetration testing, and network security monitoring.</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <section id="about">
+        <h2 class="hero">Welcome to My Cyber Security Portfolio</h2>
+        <p>Passionate about protecting data and securing networks against cyber threats.</p>
     </section>
-
-    <section>
+    
+    <section id="skills" class="skills">
         <h2>Technical Skills</h2>
-        <ul>
-            <li>Microsoft 365, Python, PHP, HTML, CSS, JavaScript</li>
-            <li>MySQL, MongoDB</li>
-            <li>Cybersecurity: Penetration Testing, Network Security, Incident Response</li>
-        </ul>
+        <p>Python, PHP, HTML, CSS, JavaScript, MySQL, MongoDB, Network Security, Penetration Testing</p>
     </section>
-
-    <section>
+    
+    <section id="experience" class="experience">
         <h2>Experience</h2>
-        <p><strong>Vosyn Inc. (Jan 2025 - Present) - Cybersecurity Analyst</strong></p>
-        <ul>
-            <li>Monitored and analyzed security alerts, improving threat response.</li>
-            <li>Implemented security tools and conducted vulnerability assessments.</li>
-        </ul>
+        <p>Cyber Security Analyst at Vosyn Inc. (Jan 2025 - Present)</p>
+        <p>Security Analyst at The Cronos Group (Jan 2024 - Dec 2024)</p>
     </section>
-
-    <section>
-        <h2>Projects & Certifications</h2>
-        <ul>
-            <li>Wake-Up Robot - Automated Line Following Alarm</li>
-            <li>Vulnerability Assessment Project</li>
-            <li>CompTIA Security+ (In Progress)</li>
-        </ul>
+    
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <p>Wake-Up Robot - Automated Line Following Alarm</p>
+        <p>Vulnerability Assessment Project</p>
     </section>
-
-    <section>
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:vrushalgogari97@gmail.com">vrushalgogari97@gmail.com</a></p>
-        <p>Phone: +1 705-970-5258</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/vrushalg" target="_blank">linkedin.com/in/vrushalg</a></p>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:vrushalgogari97@gmail.com" class="btn">Send an Email</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/vrushalg" target="_blank" class="btn">View Profile</a></p>
     </section>
-
+    
     <footer>
         <p>&copy; 2025 Vrushal Gogari | Cyber Security Analyst</p>
     </footer>
