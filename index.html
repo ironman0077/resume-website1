@@ -7,52 +7,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollmagic/2.0.8/ScrollMagic.min.js"></script>
 </head>
 <body>
     <header>
-        <h1 class="animate">Vrushal Gogari</h1>
-        <p class="animate">Cyber Security Analyst | Ethical Hacker</p>
+        <div class="nav-container">
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title animate">Vrushal Gogari</h1>
+            <p class="hero-subtitle animate">Cyber Security Analyst | Ethical Hacker</p>
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
     </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
     
-    <section id="about" class="hero-section">
-        <h2>Welcome to My Cyber Security Portfolio</h2>
-        <p>Defending digital assets, securing networks, and stopping cyber threats before they strike.</p>
+    <section id="about" class="parallax">
+        <h2>About Me</h2>
+        <p>Passionate about defending digital landscapes and securing networks.</p>
     </section>
     
     <section id="skills" class="skills">
         <h2>Technical Skills</h2>
-        <div class="skill-bar">
-            <div class="skill" style="width: 90%">Python & Cybersecurity - 90%</div>
-        </div>
-        <div class="skill-bar">
-            <div class="skill" style="width: 85%">Penetration Testing - 85%</div>
-        </div>
-        <div class="skill-bar">
-            <div class="skill" style="width: 80%">Network Security - 80%</div>
-        </div>
+        <div class="skill-card">Python & Cybersecurity - 90%</div>
+        <div class="skill-card">Penetration Testing - 85%</div>
+        <div class="skill-card">Network Security - 80%</div>
     </section>
     
     <section id="experience" class="experience">
         <h2>Experience</h2>
-        <p><strong>Cyber Security Analyst</strong> - Vosyn Inc. (Jan 2025 - Present)</p>
-        <p><strong>Security Analyst</strong> - The Cronos Group (Jan 2024 - Dec 2024)</p>
+        <div class="experience-card">
+            <h3>Vosyn Inc.</h3>
+            <p>Cyber Security Analyst (Jan 2025 - Present)</p>
+        </div>
+        <div class="experience-card">
+            <h3>The Cronos Group</h3>
+            <p>Security Analyst (Jan 2024 - Dec 2024)</p>
+        </div>
     </section>
     
     <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="project-card">Wake-Up Robot - Automated Line Following Alarm</div>
-        <div class="project-card">Vulnerability Assessment Project</div>
+        <h2>Featured Projects</h2>
+        <div class="project-gallery">
+            <div class="project-card">Wake-Up Robot - Automated Line Following Alarm</div>
+            <div class="project-card">Vulnerability Assessment Project</div>
+        </div>
     </section>
     
-    <section id="contact">
-        <h2>Contact Me</h2>
+    <section id="contact" class="contact-section">
+        <h2>Let's Connect</h2>
         <a href="mailto:vrushalgogari97@gmail.com" class="btn">Send an Email</a>
         <a href="https://www.linkedin.com/in/vrushalg" target="_blank" class="btn">LinkedIn Profile</a>
     </section>
