@@ -13,6 +13,7 @@ header {
     padding: 50px;
     font-size: 24px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 nav {
     display: flex;
@@ -43,6 +44,35 @@ section {
     padding: 30px;
     border-radius: 10px;
     margin: 20px 0;
+}
+.skill-bar {
+    background: #444;
+    height: 30px;
+    border-radius: 5px;
+    margin: 10px 0;
+    position: relative;
+}
+.skill {
+    height: 100%;
+    background: #00a8cc;
+    border-radius: 5px;
+    text-align: left;
+    padding-left: 10px;
+    line-height: 30px;
+}
+.project-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.project-card:hover {
+    background: rgba(255, 255, 255, 0.2);
 }
 .btn {
     display: inline-block;
